@@ -12,12 +12,12 @@
 
             }
             .news-text {
-                font-size: 3rem; /* Ukuran teks normal */
+                font-size: 4rem; /* Ukuran teks normal */
                 color: #ed781b;
                 position: absolute; /* Menggunakan positioning absolute */
                 bottom: 0; /* Menempatkan di bawah */
-                right: -250px; /* Menempatkan di kanan */
-                margin-bottom: -10px;
+                right: -300px; /* Menempatkan di kanan */
+                margin-bottom: -35px;
                 margin-right: -30px;   
             }
 
@@ -89,8 +89,10 @@
         </nav>
 
         <!-- Jumbotron Section -->
-        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 600px; margin-bottom: 0px;">
+        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0px;">
             <div style="background-image: url('/landing_EPA/static/src/img/news/jumbotron_news.jpg'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.8; z-index: 1;">
+            </div>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); z-index: 2;">
             </div>
             <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
                 <h1 class="display-1 jumbotron-text">

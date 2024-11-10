@@ -8,7 +8,6 @@
     'depends': ['website', 'website_blog', 'project'],
     'data': [
         'views/assets.xml',
-        'views/footer.xml',
         
         # Template untuk landing page
         'views/landing/landing_page.xml',
@@ -19,7 +18,6 @@
         'views/landing/construction.xml',
         'views/landing/testimoni.xml',
         'views/landing/contact_us.xml',
-          
         # Template untuk form page
         'views/form/form.xml',
         'views/form/jumbotron_form.xml',
@@ -53,6 +51,11 @@
 
         # input project
         'views/project/project_detail/jumbotron_detail.xml',
+
+        # template safety
+        'views/safety/safety.xml',
+        'views/safety/jumbotron_safety.xml',
+        'views/safety/safety_body.xml',
     ],
     'qweb': [],                  # Jika ada QWeb template tambahan, masukkan di sini
     'installable': True,

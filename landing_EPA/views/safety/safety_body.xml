@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="safety_body" name="Safety Body">
+
+        <style>
+            .inner-border {
+                border: 1px solid #000; /* Border dalam */
+                padding: 10px; /* Ruang di dalam kolom */
+                margin: 0; /* Menghilangkan margin luar */
+            }
+
+            .row {
+                margin: 0; /* Menghilangkan margin luar pada row */
+                display: flex; /* Menggunakan Flexbox untuk baris */
+                flex-wrap: wrap; /* Memungkinkan kolom untuk membungkus */
+            }
+
+            h4-grid {
+                font-size: 24px;
+                position: relative;
+                padding-left: 5rem;
+            }
+
+            h4-grid::before {
+                content: ''; /* Menggunakan konten kosong untuk bullet */
+                position: absolute; /* Memposisikan bullet */
+                left: 0; /* Menempatkan bullet di sisi kiri */
+                top: 50%; /* Menempatkan bullet di tengah vertikal */
+                transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
+                width: 3rem; /* Lebar bullet */
+                height: 3rem; /* Tinggi bullet */
+                background-color: #ed781b; /* Warna bullet */
+                border-radius: 50%; /* Membuat bullet berbentuk bulat */
+            }
+            h5-grid {
+                font-size: 24px;
+                position: relative; /* Untuk positioning pseudo-element */
+                padding-left: 5rem; /* Memberikan ruang untuk bullet */
+            }
+
+            h5-grid::before {
+                content: ''; /* Menggunakan konten kosong untuk bullet */
+                position: absolute; /* Memposisikan bullet */
+                left: 0; /* Menempatkan bullet di sisi kiri */
+                top: 50%; /* Menempatkan bullet di tengah vertikal */
+                transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
+                width: 3rem; /* Lebar bullet */
+                height: 3rem; /* Tinggi bullet */
+                background-color: #ed781b; /* Warna bullet */
+                border-radius: 50%; /* Membuat bullet berbentuk bulat */
+            }
+
+            .col {
+                flex: 1; /* Membuat kolom memiliki lebar yang sama */
+                min-width: 300px; /* Menentukan lebar minimum kolom */
+                box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total */
+            }
+        </style>
+        <!-- Safety First -->
+        <div class="container mt-2" style="width: 85%; max-width: 100%; margin: auto;">
+            <p style="margin-bottom: 40px; margin-top: 30px;">
+                PT. Energi Perkasa Abadi menekankan bahwa keselamatan kerja adalah hal yang utama. Penerapan keselamatan ini dilakukan melalui 3 cara, yaitu, P5M (Pembicaraan 5 Menit), 5R (Ringkas, Rapi, Resik, Rawat, Rajin), APD (Alat Pelindung Diri)
+            </p>
+            <div class="row" style="margin-bottom: 30px;">
+
+                <!-- Kolom kiri: Gambar -->
+                <div class="col-8">
+                    <img src="/landing_EPA/static/src/img/safety/safety_first.jpg" alt="Safety Image" class="img-fluid"/>
+                </div>
+
+                <!-- Kolom kanan: Teks -->
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <div class="text-start" style="font-size: 6rem; line-height: 1.2; z-index: 1; position: relative; top: 20%; left: -15%">
+                        <p class="m-0" style="font-weight: 600;">REMEMBER</p>
+                        <p class="m-0" style="font-weight: 600; color: #ed781b;">SAFETY</p>
+                        <p class="m-0" style="font-weight: 600; color: #ed781b;">FIRST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- P5M Sec -->
+        <div class="container pl-5 pr-5 my-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
+                P5M
+            </span>
+
+            <div class="text-justify mt-3 mb-3">
+                <p style="width: 100%; margin: auto; font-size: 16px;">
+                    P5M adalah Pembicaraan 5 Menit yang berisi Pengarahan tentang Keselamatan dan Kesehatan Kerja (K3) di area kerja. Sebagai upaya untuk melindungi pekerja, kegiatan P5M sangatlah penting dilakukan. Pengulangan kegiatan ini ditunjukan untuk mengulang kembali aspek K3, sehingga tertanam di benak para pekerja. Perlu dipahami, bahwa aspek K3 harus selalu melekat dalam perencanaan maupun pelaksanaan pekerjaan yang sedang dilakukan oleh para pekerja. Adapun manfaat yang didapatkan dari pelaksanaan P5M berikut ini:
+                </p>
+            </div>
+        </div>
+
+        <div class="container pl-5 pr-5" style="width: 90%; max-width: 100%; margin: auto;">
+            <div class="row">
+                <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-top: none; margin-left: 0;">
+                    <h4-grid>Awareness</h4-grid>
+                    <p style="margin-top: 30px;">Para pekerja dapat mengetahui, memahami, dan menaggulangi situasi berbahaya yang dapat terjadi pada pekerjaannya.</p>
+                </div>
+                <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-top: none; margin-left: 0;">
+                    <h5-grid>Membuat Prosedur kerja yang baik</h5-grid>
+                    <p style="margin-top: 30px;">SOP atau Standar Operational Prosedur adalah sebuah standar prosedur kerja yang wajib dibuat sebelum melakukan pekerjaan. Hal ini bertujuan agar pekerjaan yang dikerjakan dapat berjalan dengan baik dan terhindar dari situasi yang membahayakan.</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-bottom: none; margin-left: 0;">
+                    <h5-grid>Pemahaman Alat Pelindung Diri</h5-grid>
+                    <p style="margin-top: 30px;">APD atau peralatan safety yang sangat penting bagi pekerja dalam melaksanakan pekerjaannya. Kegiatan P5M ini dapat membantu pekerja mengetahui dan membantu mengingat kembali tentang manfaat penggunaan APD dan cara penggunaannya.</p>
+                </div>
+                <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-bottom: none;">
+                    <h4-grid>Meningkatkan Komunikasi</h4-grid>
+                    <p style="margin-top: 30px;">Kegiatan P5M secara tidak langsung membantu para pekerja Meningkatkan komunikasi dengan pekerja lainnya. tidak menutup kemungkinan, kegiatan ini membutuhkan kita dalam mengutarakan pendapat</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5R SEC -->
+        <div class="container pl-5 pr-5 my-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -62.5em">
+                5R
+            </span>
+        </div>
+        <div class="container pl-5 pr-5 my-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
+            <div class="row">
+
+                <!-- Kolom kiri: Gambar -->
+                <div class="col-4">
+                    <img src="/landing_EPA/static/src/img/safety/5R.png" alt="5R Cover Image" class="img-fluid" style="width: 90%; height: auto;"/>
+                </div>
+
+                <!-- Kolom kanan: Dibagi menjadi dua baris -->
+                <div class="col-8">
+
+                    <!-- Baris atas: Gambar -->
+                    <div class="row" style="min-height: 30vh;">                        <!-- Pastikan row memiliki tinggi yang cukup untuk gambar -->
+                        <!-- Kolom kiri: Gambar (10 kolom) -->
+                        <div class="col-9 pr-0">
+                            <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        </div>
+
+                        <!-- Kolom kanan: Teks (2 kolom) -->
+                        <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                            <!-- Teks dengan warna dan tag h4 & h5 -->
+                            <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                <span style="text-decoration: underline;">01</span>
+                            </h2>
+                            <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                <strong>RINGKAS</strong>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <!-- Baris bawah: Paragraf teks -->
+                    <div class="row pt-3">
+                        <div class="col-12">
+                            <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, ipsum eu convallis vehicula, libero turpis feugiat nisl, a posuere arcu odio in justo. Integer sit amet metus a nisi feugiat bibendum. Vivamus luctus dui et neque tincidunt, vitae gravida velit tempor. Duis ac lacus at enim dignissim facilisis ut at justo.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- APD SECT -->
+        <div class="container pl-5 pr-5 my-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
+                APD
+            </span>
+
+            <div class="text-justify mt-3 mb-3">
+                <p style="width: 100%; margin: auto; font-size: 16px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet efficitur tortor. Curabitur vitae quam ante. Maecenas aliquet lacinia quam ut molestie. Donec vitae risus euismod, faucibus erat in, pharetra est. Fusce venenatis velit metus, sit amet pharetra augue imperdiet quis. Nulla facilisi. Suspendisse quis lorem consequat, vehicula orci sit amet, placerat risus. Mauris pulvinar tempor magna. Proin interdum commodo arcu, ut convallis leo semper sed. Nulla velit nibh, commodo a lacus id, dapibus vestibulum nibh. Cras pretium metus porta magna fermentum, dictum tincidunt quam ultricies. Duis dictum lacus et quam vehicula condimentum. Sed ullamcorper lacinia felis, vitae tincidunt magna euismod id.
+                </p>
+            </div>
+            <!-- Section Baru untuk Gambar di Tengah -->
+            <section style="min-height: 40vh; display: flex; justify-content: center; align-items: center; background-color: #ece7e1; margin-top: 60px;">
+                <img src="landing_EPA/static/src/img/safety/APD.png" alt="APD Image" class="img-fluid" style="max-width: 100%; height: 70vh;"/>
+            </section>
+
+
+
+        </div>
+
+    </template>
+
+</odoo>

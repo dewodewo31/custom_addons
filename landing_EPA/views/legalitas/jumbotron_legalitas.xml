@@ -66,9 +66,13 @@
         </nav>
 
         <!-- Jumbotron Section -->
-        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 600px; margin-bottom: 0;">
+        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0;">
             <div style="background-image: url('/landing_EPA/static/src/img/lsk/jumbotron_lsk.jpg'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.8; z-index: 1;">
+</div>
+<!-- Black Layer -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); z-index: 2;">
             </div>
+
             <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
                 <h1 class="display-4 jumbotron-text" style="font-size: calc(2.8rem + 1vw);">
             LEGALITAS/SERTIFIKASI/KUALIFIKASI

@@ -23,7 +23,6 @@
 
                 <t t-call="landing_EPA.invite_us"/>
 
-                <t t-call="landing_EPA.footer"/>
 
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>

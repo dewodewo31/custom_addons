@@ -6,7 +6,7 @@
             .jumbotron-text {
                     color: #fff;
                     font-weight: bold;
-                    font-size: 6vw; /* Ukuran responsif berbasis lebar viewport */
+                    font-size: 10vw; /* Ukuran responsif berbasis lebar viewport */
                     text-align: center; /* Rata tengah */
                     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
@@ -64,8 +64,11 @@
         </nav>
 
         <!-- Jumbotron Section -->
-        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 600px; margin-bottom: 0px;">
-            <div style="background-image: url('/landing_EPA/static/src/img/services/jumbotron_service.jpg'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.8; z-index: 1;">
+        <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0px;">
+            <div style="background-image: url('/landing_EPA/static/src/img/services/jb_service.png'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; z-index: 1; ">
+                <!-- background-size: 125%;     background-position: 100% 40%; -->
+            </div>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); z-index: 2;">
             </div>
             <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
                 <h1 class="display-1 jumbotron-text">

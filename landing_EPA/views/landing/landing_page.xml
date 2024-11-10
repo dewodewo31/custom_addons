@@ -14,9 +14,6 @@
                 <!-- Navbar -->
                 <t t-call="landing_EPA.jumbotron"/>
 
-                <!-- Card Section -->
-                <!-- <t t-call="landing_EPA.card"/> -->
-
                 <!-- Our Certification Section -->
                 <t t-call="landing_EPA.certi"/>
 
@@ -32,8 +29,7 @@
                 <!-- Contact Section -->
                 <t t-call="landing_EPA.contact"/>
 
-                <!-- Footer -->
-                <t t-call="landing_EPA.footer"/>
+
 
                 <!-- JS -->
                 <t t-call="landing_EPA.assets_js"/>

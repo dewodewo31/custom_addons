@@ -3,69 +3,73 @@
     <template id="project_body" name="project body section">
         <style>
             
-    /* Warna untuk halaman aktif */
-.pagination .page-item.active .page-link {
-    background-color: #ed781b;
-    border-color: #ed781b;
-    color: #ffffff; /* Warna teks putih agar kontras */
-}
+            /* Style untuk halaman aktif */
+            .pagination .page-item.active .page-link,
+            .custom-page-link.active {
+                background-color: #ed781b;
+                border-color: #ed781b;
+                color: #ffffff;
+                border-radius: 50%; 
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-/* Warna untuk halaman yang tidak aktif */
-.pagination .page-item .page-link {
-    background-color: #ece7e1;
-    border-color: #ece7e1;
-    color: #333; /* Warna teks yang lebih gelap */
-}
+            /* Style umum untuk halaman tidak aktif */
+            .pagination .page-item .page-link,
+            .custom-page-link {
+                background-color: #ece7e1;
+                border-color: #ece7e1;
+                color: #333;
+                border-radius: 50%; 
+                width: 36px; 
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 5px;
+                text-decoration: none;
+                transition: background-color 0.2s, color 0.2s;
+            }
 
-/* Tambahan hover untuk halaman yang tidak aktif */
-.pagination .page-item .page-link:hover {
-    background-color: #dcd9d1; /* Sedikit lebih gelap saat di-hover */
-    color: #333;
-}
+            /* Hover effect untuk halaman yang tidak aktif */
+            .pagination .page-item .page-link:hover,
+            .custom-page-link:hover {
+                background-color: #dcd9d1;
+                color: #ed781b;
+            }
 
+            /* Style untuk ikon dalam tombol pagination dengan object-fit cover */
+            .pagination .page-link img,
+            .custom-page-link img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+                object-fit: cover; /* Membuat gambar memenuhi lingkaran tanpa distorsi */
+            }
 
+            /* Custom button hover */
             .custom-btn:hover {
                 background-color: #ed781b;
                 color: #ece7e1;
             }
 
-            .custom-pagination {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 10px;
-            }
-
-            .custom-page-link {
-                margin: 0 5px;
-                padding: 8px 12px;
-                border: 1px solid #ed781b; /* Warna border sesuai keinginan */
-                border-radius: 5px; /* Sesuaikan dengan keinginan */
-                background-color: #ece7e1; /* Warna latar belakang */
-                color: #000; /* Warna teks */
-                text-decoration: none;
-            }
-
-            .custom-page-link:hover {
-                background-color: #ece7e1; /* Warna saat hover */
-                color: #ed781b; /* Warna teks saat hover */
-            }
-
-            /* Tambahkan aturan ini untuk halaman aktif */
-            .custom-page-link.active {
-                background-color: #ed781b; /* Warna latar belakang untuk halaman aktif */
-                color: black; /* Warna teks untuk halaman aktif */
-            }
-
+            /* Disable custom page link */
             .custom-page-link[disabled] {
-                opacity: 0.5; /* Untuk menonaktifkan link */
-                pointer-events: none; /* Nonaktifkan interaksi */
+                opacity: 0.5;
+                pointer-events: none;
             }
 
+            /* Style untuk membalik gambar secara horizontal */
+            .reverse-icon {
+                transform: scaleX(-1); /* Membalik gambar secara horizontal */
+            }
 
             
         </style>
-        <div class="container-fluid" style="background-image: url('/landing_EPA/static/src/img/project/bg_project.png'); background-size: 70%; background-position: center;">
+        <div class="container-fluid" style="background-image: url('/landing_EPA/static/src/img/project/bg_project.png'); background-size: 100%; ">
             <div class="container">
                 <div class="row">
                     <!-- Kolom Kiri: Judul dengan margin kecil -->
@@ -101,7 +105,7 @@
                                     <div class="img-container" style="height: 410px; position: relative;">
                                         <t t-if="len(projects) > 0">
                                             <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[0].id" alt="Project 1 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                 <h4 class="text-white" style="margin: 0;">
                                                     <a t-att-href="'/project_page/%s' % projects[0].id" style="color: white; text-decoration: none;">
                                                         <t t-esc="projects[0].name_proyek" />
@@ -119,7 +123,7 @@
                                             <div class="col-md-6 p-1">
                                                 <div class="img-container" style="height: 200px; position: relative;">
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[1].id" alt="Project 2 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[1].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[1].name_proyek" />
@@ -134,7 +138,7 @@
                                             <div class="col-md-6 p-1">
                                                 <div class="img-container" style="height: 200px; position: relative;">
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[2].id" alt="Project 6 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[2].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[2].name_proyek" />
@@ -151,7 +155,7 @@
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[3].id" alt="Project 7 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
 
                                                     <!-- Overlay hitam yang lebih presisi -->
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[3].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[3].name_proyek" />
@@ -172,7 +176,7 @@
                                             <div class="col-md-6 p-1">
                                                 <div class="img-container" style="height: 200px; position: relative;">
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[4].id" alt="Project 5 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[4].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[4].name_proyek" />
@@ -187,7 +191,7 @@
                                             <div class="col-md-6 p-1">
                                                 <div class="img-container" style="height: 200px; position: relative;">
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[5].id" alt="Project 6 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[5].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[5].name_proyek" />
@@ -202,7 +206,7 @@
                                             <div class="col-md-12 p-1">
                                                 <div class="img-container" style="height: 200px; position: relative;">
                                                     <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[6].id" alt="Project 7 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                         <h4 class="text-white" style="margin: 0;">
                                                             <a t-att-href="'/project_page/%s' % projects[6].id" style="color: white; text-decoration: none;">
                                                                 <t t-esc="projects[6].name_proyek" />
@@ -220,7 +224,7 @@
                                     <div class="img-container" style="height: 410px; position: relative;">
                                         <t t-if="len(projects) > 7">
                                             <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[7].id" alt="Project 8 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
-                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); display: flex; align-items: flex-end; padding: 10px;">
+                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2); display: flex; align-items: flex-end; padding: 10px;">
                                                 <h4 class="text-white" style="margin: 0;">
                                                     <a t-att-href="'/project_page/%s' % projects[7].id" style="color: white; text-decoration: none;">
                                                         <t t-esc="projects[7].name_proyek" />
@@ -240,31 +244,32 @@
                             <ul class="pagination justify-content-center">
                                 <!-- Tombol Sebelumnya -->
                                 <li class="page-item" t-if="current_page > 1">
-                                    <a t-att-href="'/project_page?page=%s' % (current_page - 1)" class="page-link" aria-label="Previous">
-                                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Sebelumnya" style="width: 20px; height: 20px; transform: scaleX(-1);"/>
-                                    </a>
-                                </li>
+                    <a t-att-href="'/project_page?page=%s' % (current_page - 1)" class="page-link" aria-label="Previous">
+                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Sebelumnya" class="pagination-icon reverse-icon"/>
+                    </a>
+                </li>
 
 
-                                <!-- Nomor Halaman -->
-                                <t t-foreach="range(1, total_pages + 1)" t-as="p">
-                                    <li t-att-class="'page-item %s' % ('active' if p == current_page else '')">
-                                        <a t-att-href="'/project_page?page=%s' % p" class="page-link">
-                                            <t t-esc="p"/>
-                                        </a>
-                                    </li>
-                                </t>
+                <!-- Nomor Halaman -->
+                <t t-foreach="range(1, total_pages + 1)" t-as="p">
+                    <li t-att-class="'page-item %s' % ('active' if p == current_page else '')">
+                        <a t-att-href="'/project_page?page=%s' % p" class="page-link">
+                            <t t-esc="p"/>
+                        </a>
+                    </li>
+                </t>
 
-                                <!-- Tombol Berikutnya -->
-                                <li class="page-item" t-if="current_page &lt; total_pages">
-                                    <a t-att-href="'/project_page?page=%s' % (current_page + 1)" class="page-link" aria-label="Next">
-                                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Berikutnya" style="width: 20px; height: 20px;"/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+                <!-- Tombol Berikutnya -->
+                <li class="page-item" t-if="current_page &lt; total_pages">
+                    <a t-att-href="'/project_page?page=%s' % (current_page + 1)" class="page-link" aria-label="Next">
+                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Berikutnya" class="pagination-icon"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 
             </t>
 

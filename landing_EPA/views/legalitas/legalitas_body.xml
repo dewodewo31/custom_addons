@@ -15,181 +15,164 @@
 
 
         <!-- DAFTAR LEGALITAS -->
-        <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px; ">
-            <h2 style="text-align: center; color: #ed781b;">DAFTAR LEGALITAS</h2>
-            <div class="accordion" id="legalitasAccordion">
-                <!-- Content 1 -->
-                <div class="card" style="background-color: #ece7e1; border-radius: 0;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasOne">
-                        <h5 class="mb-0">
-                    Content 1
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasOne" aria-expanded="false" aria-controls="collapseLegalitasOne">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
-
-                    <div id="collapseLegalitasOne" class="collapse" aria-labelledby="headingLegalitasOne" data-parent="#legalitasAccordion">
-                        <div class="card-body">
-                    Sub Content 1.1
-                            <ul>
-                                <li>Detail 1.1.1</li>
-                                <li>Detail 1.1.2</li>
-                            </ul>
-                    Sub Content 1.2
-                            <ul>
-                                <li>Detail 1.2.1</li>
-                                <li>Detail 1.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content 2 -->
-                <div class="card" style="background-color: #ece7e1;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasTwo">
-                        <h5 class="mb-0">
-                    Content 2
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasOne" aria-expanded="false" aria-controls="collapseLegalitasOne">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
-                    <div id="collapseLegalitasTwo" class="collapse" aria-labelledby="headingLegalitasTwo" data-parent="#legalitasAccordion">
-                        <div class="card-body">
-                    Sub Content 2.1
-                            <ul>
-                                <li>Detail 2.1.1</li>
-                                <li>Detail 2.1.2</li>
-                            </ul>
-                    Sub Content 2.2
-                            <ul>
-                                <li>Detail 2.2.1</li>
-                                <li>Detail 2.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
+<div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+    <h2 style="text-align: center; color: #ed781b;">DAFTAR LEGALITAS</h2>
+    
+    <div class="accordion" id="legalitasAccordion">
+        <!-- Content 1 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasOne" style="border-radius: 0;">
+                <h5 class="mb-0">Akta Perusahaan</h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasOne" aria-expanded="false" aria-controls="collapseLegalitasOne">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
+            <div id="collapseLegalitasOne" class="collapse" aria-labelledby="headingLegalitasOne" data-parent="#legalitasAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>Akta Pendirian Perusahaan</li>
+                        <li>Akta Perubahan Perusahaan</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Content 2 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasTwo" style="border-radius: 0;">
+                <h5 class="mb-0">Surat Izin Usaha</h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasTwo" aria-expanded="false" aria-controls="collapseLegalitasTwo">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
+            <div id="collapseLegalitasTwo" class="collapse" aria-labelledby="headingLegalitasTwo" data-parent="#legalitasAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>Surat Izin Usaha Jasa Pertambangan Mineral dan Batubara</li>
+                        <li>Surat Izin Usaha Jasa Konstruksi Nasional</li>
+                        <li>Surat Izin Usaha Perdagangan (SIUP)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
         <!-- DAFTAR SERTIFIKASI -->
-        <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
-            <h2 style="text-align: center; color: #ed781b;">DAFTAR SERTIFIKASI</h2>
-            <div class="accordion" id="sertifikasiAccordion">
-                <!-- Content 1 -->
-                <div class="card" style="background-color: #ece7e1; border-radius: 0;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiOne">
-                        <h5 class="mb-0">
-                    Content 1
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiOne" aria-expanded="false" aria-controls="collapseSertifikasiOne">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
+      <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+    <h2 style="text-align: center; color: #ed781b;">DAFTAR SERTIFIKASI</h2>
+    <div class="accordion" id="sertifikasiAccordion">
+        <!-- Content 1 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiOne">
+                <h5 class="mb-0">
+                    Sertifikasi Kelayakan Konstruksi Platform (SKKP)
+                </h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiOne" aria-expanded="false" aria-controls="collapseSertifikasiOne">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
 
-                    <div id="collapseSertifikasiOne" class="collapse" aria-labelledby="headingSertifikasiOne" data-parent="#sertifikasiAccordion">
-                        <div class="card-body">
-                    Sub Content 1.1
-                            <ul>
-                                <li>Detail 1.1.1</li>
-                                <li>Detail 1.1.2</li>
-                            </ul>
-                    Sub Content 1.2
-                            <ul>
-                                <li>Detail 1.2.1</li>
-                                <li>Detail 1.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content 2 -->
-                <div class="card" style="background-color: #ece7e1;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
-                        <h5 class="mb-0">
-                    Content 2
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiTwo" aria-expanded="false" aria-controls="collapseSertifikasiTwo">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
-                    <div id="collapseSertifikasiTwo" class="collapse" aria-labelledby="headingSertifikasiTwo" data-parent="#sertifikasiAccordion">
-                        <div class="card-body">
-                    Sub Content 2.1
-                            <ul>
-                                <li>Detail 2.1.1</li>
-                                <li>Detail 2.1.2</li>
-                            </ul>
-                    Sub Content 2.2
-                            <ul>
-                                <li>Detail 2.2.1</li>
-                                <li>Detail 2.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div id="collapseSertifikasiOne" class="collapse" aria-labelledby="headingSertifikasiOne" data-parent="#sertifikasiAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>SKKP - Jasa Pemborongan Non Konstruksi Logam, Kayu, dan Plastik</li>
+                        <li>SKKP - Jasa Pemasok Barang Pemasokan Barang Semua Bidang</li>
+                        <li>SKKP - Jasa Pengembangan Real Estate Jasa Real Estate</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Content 2 -->
+        <div class="card" style="background-color: #e3e0d7; border: none; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
+                <h5 class="mb-0">
+                    Sertifikat SMK3
+                </h5>
+            </div>
+        </div>
+
+        <!-- Content 3 -->
+        <div class="card" style="background-color: #e3e0d7; border: none; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiThree">
+                <h5 class="mb-0">
+                    The International Organization for Standardization (ISO)
+                </h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiThree" aria-expanded="false" aria-controls="collapseSertifikasiThree">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
+            <div id="collapseSertifikasiThree" class="collapse" aria-labelledby="headingSertifikasiThree" data-parent="#sertifikasiAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>ISO 9001 : 2015</li>
+                        <li>ISO 18001 : 2007</li>
+                        <li>ISO 14001 : 2015</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
         <!-- DAFTAR KUALIFIKASI -->
-        <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
-            <h2 style="text-align: center; color: #ed781b;">DAFTAR KUALIFIKASI</h2>
-            <div class="accordion" id="kualifikasiAccordion">
-                <!-- Content 1 -->
-                <div class="card" style="background-color: #ece7e1; border-radius: 0;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiOne">
-                        <h5 class="mb-0">
-                    Content 1
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiOne" aria-expanded="false" aria-controls="collapsekualifikasiOne">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
-
-                    <div id="collapsekualifikasiOne" class="collapse" aria-labelledby="headingkualifikasiOne" data-parent="#kualifikasiAccordion">
-                        <div class="card-body">
-                    Sub Content 1.1
-                            <ul>
-                                <li>Detail 1.1.1</li>
-                                <li>Detail 1.1.2</li>
-                            </ul>
-                    Sub Content 1.2
-                            <ul>
-                                <li>Detail 1.2.1</li>
-                                <li>Detail 1.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content 2 -->
-                <div class="card" style="background-color: #ece7e1;">
-                    <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiTwo">
-                        <h5 class="mb-0">
-                    Content 2
-                        </h5>
-                        <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiTwo" aria-expanded="false" aria-controls="collapsekualifikasiTwo">
-                            <i class="fas fa-arrow-down" style="color: #ed781b;"></i>
-                        </button>
-                    </div>
-                    <div id="collapsekualifikasiTwo" class="collapse" aria-labelledby="headingkualifikasiTwo" data-parent="#kualifikasiAccordion">
-                        <div class="card-body">
-                    Sub Content 2.1
-                            <ul>
-                                <li>Detail 2.1.1</li>
-                                <li>Detail 2.1.2</li>
-                            </ul>
-                    Sub Content 2.2
-                            <ul>
-                                <li>Detail 2.2.1</li>
-                                <li>Detail 2.2.2</li>
-                            </ul>
-                        </div>
-                    </div>
+     <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+    <h2 style="text-align: center; color: #ed781b;">DAFTAR KUALIFIKASI</h2>
+    <div class="accordion" id="kualifikasiAccordion">
+        <!-- Content 1 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiOne">
+                <h5 class="mb-0">Kartu Tanda Anggota</h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiOne" aria-expanded="false" aria-controls="collapsekualifikasiOne">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
+            <div id="collapsekualifikasiOne" class="collapse" aria-labelledby="headingkualifikasiOne" data-parent="#kualifikasiAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>Kartu Tanda Anggota ASKOSNAS</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Content 2 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
+                <h5 class="mb-0">NIB (Nomor Induk Berusaha)</h5>
+            </div>
+        </div>
+
+        <!-- Content 3 -->
+        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiTwo">
+                <h5 class="mb-0">Surat Badan Usaha (SBU)</h5>
+                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiTwo" aria-expanded="false" aria-controls="collapsekualifikasiTwo">
+                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                </button>
+            </div>
+            <div id="collapsekualifikasiTwo" class="collapse" aria-labelledby="headingkualifikasiTwo" data-parent="#kualifikasiAccordion">
+                <div class="card-body" style="background-color: #ece7e1 !important;">
+                    <ul style="list-style-type: none; padding-left: 30px;">
+                        <li>SBU Bangunan Sipil</li>
+                        <li>SBU Bangunan Gedung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -199,12 +182,12 @@
     document.querySelectorAll('.accordion .btn-link').forEach(function(button) {
         button.addEventListener('click', function() {
             let icon = this.querySelector('i');
-            if (icon.classList.contains('fa-arrow-down')) {
-                icon.classList.remove('fa-arrow-down');
-                icon.classList.add('fa-arrow-up');
+            if (icon.classList.contains('fa-angle-down')) {
+                icon.classList.remove('fa-angle-down');
+                icon.classList.add('fa-angle-up');
             } else {
-                icon.classList.remove('fa-arrow-up');
-                icon.classList.add('fa-arrow-down');
+                icon.classList.remove('fa-angle-up');
+                icon.classList.add('fa-angle-down');
             }
         });
     });

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="invite_us" name="Invite Us Section">
-        <div id="make-vision" class="container-fluid mt-1 mb-1 text-center custom-bg">
+        <div id="make-vision" class="container-fluid mt-1 mb-1 p-1 text-center custom-bg">
             <style>
                 .custom-bg {
                     background-image: url('/landing_EPA/static/src/img/services/invite_us.png'); /* Ganti dengan path ke gambar kamu */
@@ -10,11 +10,11 @@
                     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
                 }
             </style>
-            <h1 style="font-size: 3rem; font-weight: bold; margin-top: 100px; color: #fff;">
+            <h1 style="font-size: 4.5rem; font-weight: bold; margin-top: 100px; color: #fff;">
                 MAKE YOUR <span style="color: #ed781b;">VISION</span> COME TRUE, NOW!
             </h1>
 
-            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 20px; margin-top: 20px; margin-bottom: 100px; border-radius: 0;" data-toggle="modal" data-target="#contactModal">
+            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 40px; margin-top: 50px; margin-bottom: 100px; border-radius: 0;" data-toggle="modal" data-target="#contactModal">
                 INVITE US
             </a>
 
@@ -23,7 +23,7 @@
                     <div class="modal-content" style="border-radius: 10px; background-color: #ece7e1;">
                         <div class="modal-body p-3 d-flex justify-content-center align-items-center" style="min-height: 250px;">                            <!-- Mengurangi padding dan height -->
                             <div class="d-flex flex-column align-items-center" style="gap: 15px;">                                <!-- Mengurangi jarak antar elemen -->
-                                <h1 style="font-size: 2rem; font-weight: bold; margin-top: 0px; margin-bottom: 0;">                                    <!-- Mengurangi ukuran font -->
+                                <h1 style="font-size: 4rem; font-weight: bold; margin-top: 0px; margin-bottom: 0;">                                    <!-- Mengurangi ukuran font -->
                         YOUR VISION IS OUR MISSION,                                    <span style="color: #ed781b;">INVITE US!</span>
                                 </h1>
                                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
@@ -48,7 +48,7 @@
                                     <!-- Button Fill a Form -->
                                     <div class="text-center d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-primary" style="background-color: #ed781b; color: white; font-size: 1.2rem; font-family: 'Open Sans', sans-serif; font-weight: bold; padding: 10px 15px; border-radius: 0;" onclick="window.location.href='/form_page';">
-                                FILL IN A FORM
+                                            FILL IN A FORM
                                         </button>
                                     </div>
                                 </div>

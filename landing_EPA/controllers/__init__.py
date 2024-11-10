@@ -5,3 +5,4 @@ from . import news_controller
 from . import about_controller
 from . import servis_controller
 from . import project_controller
+from . import safety_controller

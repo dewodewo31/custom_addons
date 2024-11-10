@@ -33,7 +33,7 @@
             </style>
             <t t-call="landing_EPA.assets_css"/>
             <!-- Jumbotron Section -->
-            <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 600px; margin-bottom: 0px;">
+            <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0px;">
                 <!-- Background Image -->
                 <div t-attf-style="background-image: url('{{ main_image_url }}'); 
                    background-size: cover; 
@@ -69,7 +69,7 @@
                 </nav>
 
                 <!-- Text in the Center of Jumbotron -->
-                <div class="container" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2;">
+                <div class="container" style="position: absolute; bottom: 20px; left: 40%; transform: translateX(-50%); z-index: 2;">
                     <h1 class="jumbotron-text">
                         <t t-esc="name_proyek" />
                     </h1>
@@ -145,16 +145,16 @@
                     </div>
                 </div>
 
-                <div class="row no-gutters" style="min-height: 250px; margin-top: 20px;">
+                <div class="row no-gutters" style="min-height: 250px; margin-top: 30px;">
                     <div class="col-12 p-0" style="padding: 20px;">
                         <!-- Bagian Atas (Teks) -->
-                        <div style="text-align: justify; margin-bottom: 20px;">
+                        <div style="text-align: justify; margin-bottom: 30px;">
                             <t t-esc="desc_part2" />
                         </div>
                         <!-- Bagian Bawah (Gambar sebagai Background) -->
                         <!-- Bagian Carousel -->
-                        <div id="projectCarousel" class="carousel slide" data-ride="carousel" style="position: relative; padding: 0 50px;">
-                            <div class="carousel-inner" style="height: 350px;">                                <!-- Ubah tinggi carousel jika diperlukan -->
+                      <div id="projectCarousel" class="carousel slide" data-ride="carousel" style="position: relative; padding: 0;">
+                            <div class="carousel-inner" style="height: 350px;">
                                 <!-- Gambar Utama -->
                                 <t t-if="main_image_url">
                                     <div class="carousel-item active" t-attf-style="background-image: url('{{ main_image_url }}'); background-size: cover; background-position: center; height: 100%;">
@@ -172,38 +172,44 @@
                                 </t>
                             </div>
 
-                            <!-- Kontrol Navigasi Carousel -->
-                            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        
+                            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next" 
+                            style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%) translateX(10px);">
+                                <div style="background-image: url('/landing_EPA/static/src/img/icon/big.png'); background-size: cover; background-position: center; background-color: white; border-radius: 50%; width: 7rem; height: 7rem;">
+                                </div>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-
-
-
 
                     </div>
                 </div>
             </div>
             <div class="container-fluid d-flex align-items-center mt-5 mb-5" style="background-color: #dcd9d1; height: auto;">
-                <div class="container mb-5">
+                <div class="container mt-5 mb-5">
                     <h1 style="font-size: 3rem; font-weight: bold; text-align: center;">
             WHAT THEY SAY <span style="color: #ed781b;">ABOUT THIS PROJECT</span>
                     </h1>
 
-                    <div class="p-4 mt-4" style="background-color: #f8f9fa; border: 2px solid #ddd; border-radius: 0;">
-                        <p style="font-size: 1.2rem; color: #333; text-align: left;">
-                            <t t-esc="testi" />
-                        </p>
-                        <p style="text-align: center; font-weight: bold; color: #555; margin-top: 20px; margin-bottom: 0;">
-                            <t t-esc="name_testi" />
-,                            <t t-esc="client" />
-                        </p>
-                    </div>
+                    <div class="p-4 mt-4" style="background-color: #fff; border: 2px solid #ddd; border-radius: 0; position: relative;">
+    <!-- Tanda petik besar di ujung atas -->
+    <span style="position: absolute; top: 0; left: 40px; font-size: 5rem; color: #000;">
+        “
+    </span>
+
+    <p style="font-size: 1.2rem; color: #000; text-align: center; padding: 40px; padding-bottom: 20px;">
+        <t t-esc="testi" />
+    </p>
+    <p style="text-align: center; font-weight: bold; color: #000; margin-top: 0; margin-bottom: 0;">
+        <t t-esc="name_testi" />, <t t-esc="client" />
+    </p>
+
+    <!-- Tanda petik di pojok kanan bawah -->
+    <span style="position: absolute; bottom: -40px; right: 40px; font-size: 5rem; color: #000;">
+        ”
+    </span>
+</div>
+
+
                 </div>
             </div>
 

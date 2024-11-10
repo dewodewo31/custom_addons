@@ -21,7 +21,7 @@
     }
         </style>
         <!-- whoweare -->
-        <div class="container mb-2 pb-1 pt-1" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 50px;">
+        <div class="container mb-2 p-0" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 50px;">
             <div class="container">
                 <div class="my-4 mb-3 text-left">
                     <span style="font-size: 3rem; font-weight: bold;">
@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-justify">
-                        PT. ENERGI PERKASA ABADI berdiri sejak tahun 2008 di Samarinda, Kalimantan Timur. Diawali bergerak di bidang rental kendaraan dan alat berat, kini kami juga bergerak di bidang lain dengan cakupan nasional. 
+                        PT. ENERGI PERKASA ABADI berdiri sejak tahun 2008 di Samarinda, Kalimantan Timur. 
                         </p>
                         <ul style="list-style-type: disc; padding-left: 20px;">
                             <li>Konstruksi dan desain bangunan komersial, industri, infrastruktur, dan perumahan.</li>
@@ -47,20 +47,20 @@
         </div>
 
         <!-- list -->
-        <div class="container-fluid p-3 my-2 mb-3" style="background-color: #dcd9d1; position: relative; text-align: center; height: 100px; display: flex; justify-content: center; align-items: center;">
-            <img src="/landing_EPA/static/src/img/about/hr_about.png" alt="About Image" style="width: 85%; height: auto;"/>
+        <div class="container-fluid p-3 mt-4 mb-4" style="background-color: #dcd9d1; position: relative; text-align: center; height: 200px; display: flex; justify-content: center; align-items: center;">
+            <img src="/landing_EPA/static/src/img/about/line.png" alt="About Image" style="width: 79%; height: auto;"/>
         </div>
 
 
         <!-- vision mision -->
-        <div class="container mt-5 mb-3">
+        <div class="container p-0 mt-4 mb-3">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 VISION &amp; MISSION
             </span>
         </div>
 
-        <div class="container-fluid p-3 my-2 mb-3" style="background-color: #ece7e1;">
+        <div class="container-fluid p-0 mt-3 mb-4" style="background-color: #ece7e1;">
             <div class="container">
                 <div class="row text-center" style="align-items: center;">
 
@@ -101,17 +101,17 @@
 
 
         <!-- corevalues -->
-        <div class="container-fluid mt-4 mb-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 5px;">
+        <div class="container-fluid mt-4 mb-3" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 5px;">
             <div class="container text-end">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
-                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -1em">
+                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
             CORE VALUES
                 </span>
             </div>
         </div>
 
 
-        <div class="container-fluid mt-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png');">
+        <div class="container-fluid mt-3 mb-4" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png');">
             <div class="container">
                 <div class="row">
                     <!-- Card 1: Integrity -->
@@ -158,14 +158,14 @@
 
 
         <!-- safety first -->
-        <div class="container mt-5 mb-0">
+        <div class="container mt-4 mb-3">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 SAFETY PROTOCOL
             </span>
         </div>
 
-        <div class="container-fluid mt-0">
+        <div class="container-fluid mt-3 mb-4">
             <div class="container">                <!-- Menambahkan container di sini -->
                 <div class="row justify-content-center">
                     <!-- Kartu Safety First -->
@@ -177,41 +177,41 @@
 
 
 
-                        <div class="card">
-                            <div class="card" style="background-color: #ece7e1; border-radius: 0;">
-                                <div class="card-body" style="background: #ece7e1;">
-                                    <h3 class="card-title">SAFETY FIRST</h3>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="/legal_page" style="text-decoration: none; display: inline-flex; align-items: center;">
-                                        <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
-                                    LEARN MORE
-                                        </span>
-                                        <img src="/landing_EPA/static/src/img/icon/big.png" alt="Learn More Icon" style="width: 3%; margin-left: 5px;"/>
-                                    </a>
-                                </div>
+                        <div class="card" style="background-color: #ece7e1; border-radius: 0; border: none;">
+                            <div class="card-body" style="background: #ece7e1;">
+                                <h3 class="card-title">SAFETY FIRST</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="/legal_page" style="text-decoration: none; display: inline-flex; align-items: center;">
+                                    <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
+                                        LEARN MORE
+                                    </span>
+                                    <img src="/landing_EPA/static/src/img/icon/big.png" alt="Learn More Icon" style="width: 3%; margin-left: 5px;"/>
+                                </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid mt-5 mb-0 pb-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 50px;">
+        <!-- LSK Sec -->
+        <div class="container-fluid mt-4 mb-3 p-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 50px;">
             <div class="container text-end">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
-                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -1em">
+                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
             LEGALITAS/SERTIFIKASI/KUALIFIKASI
                 </span>
             </div>
         </div>
 
-        <div class="container-fluid mb-5" style="background-image: url('/landing_EPA/static/src/img/about/bg_legal.png');">
-            <div class="container">                <!-- Menambahkan container di sini -->
+        <div class="container-fluid mt-3 mb-4" style="background-image: url('/landing_EPA/static/src/img/about/bg_legal.png'); border: none;">
+            <div class="container">
                 <div class="row">
                     <!-- Card 1: Legalitas/Sertifikasi/Kualifikasi (Kiri) -->
                     <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body" style="background-color: #ece7e1; border-radius: 0;">
+                        <div class="card" style="border: none;">
+                            <div class="card-body" style="background-color: #ece7e1; border-radius: 0; border: none;">
                                 <h3 class="card-title">LEGALITAS/SERTIFIKASI/KUALIFIKASI</h3>
                                 <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -231,23 +231,16 @@
 
                     <!-- Card 2: Image Only (Kanan) -->
                     <div class="col-md-6">
-                        <div class="card" style="background-color: #ece7e1; border-radius: 0; height: 100%;">
+                        <div class="card" style="background-color: #ece7e1; border-radius: 0; height: 100%; border: none;">
                             <div style="position: relative; width: 100%; height: 300px;">
                                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
                                 <img t-att-src="'/landing_EPA/static/src/img/about/lsk.jpg'" class="card-img-top" alt="Legalitas Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0; z-index: 2;"/>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
 
 
 
