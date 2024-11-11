@@ -14,7 +14,7 @@
         </div>
         <div class="container-fluid mb-4 mt-2" style="background-color: #dcd9d1;">
             <div class="container d-flex justify-content-center align-items-center" style="height: 200px;">
-                <img src="/landing_EPA/static/src/img/services/hr.PNG" alt="HR Expertise" style="width: 79%; height: auto;"/>
+                <img src="/landing_EPA/static/src/img/services/hr.PNG" alt="HR Expertise" style="width: 100%; height: auto;"/>
             </div>
         </div>
         <!-- end -->
@@ -23,7 +23,7 @@
         <div class="container-fluid" style="background-image: url('/landing_EPA/static/src/img/services/bg_eng.png'); background-size: cover; background-position: center;">
             <div class="container pl-5 pr-5 mt-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
-                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; font-weight: bold; left: -0.5em">
+                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px;left: -0.5em">
                     01 ENGINEERING
                 </span>
             </div>
@@ -59,9 +59,9 @@
         <!-- end -->
 
         <!-- procurement -->
-        <div class="container pl-5 pr-5 mt-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
+        <div class="container pl-5 pr-5 mt-4 mb-3 text-end" style="width: 90%; max-width: 100%; margin: auto;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
-            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; font-weight: bold; right: -53.8em">
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.5em">
                 02 PROCUREMENT
             </span>
         </div>
@@ -87,7 +87,7 @@
             <div class="container pl-5 pr-5 mt-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
 
-                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; font-weight: bold; left: -1em">
+                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px;  left: -1em">
             03 CONSTRUCTION
                 </span>
             </div>
@@ -121,7 +121,7 @@
         </div>
 
         <!-- safety protocol -->
-        <div class="container-fluid" style="background-color: #dcd9d1; margin-top: 30px; margin-bottom: 30px;">
+        <div class="container-fluid" style="background-color: #dcd9d1; margin-top: 30px; margin-bottom: 0;">
             <div class="container pl-5 pr-5 mt-4 mb-3" style="width: 90%; max-width: 100%; margin: auto;">
                 <div class="row position-relative">
                     <!-- Grid Gambar -->
@@ -149,15 +149,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
 
     </template>
 </odoo>

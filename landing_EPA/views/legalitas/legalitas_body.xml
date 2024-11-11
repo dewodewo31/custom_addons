@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="legal_body" name="Legalitas Body">
-        <div class="container my-4">
+
+        <div class="container-fluid mt-3 mb-3" style="width: 85%;">
             <h1 class="display-4 text-start" style="font-weight: bold;">LEGALITAS/SERTIFIKASI/KUALIFIKASI</h1>
             <p class="text-justify" style="font-size: 1.2rem; margin-top: 20px;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, massa ut sagittis placerat, leo nisl dapibus justo, non dictum ex sapien in ex. Fusce nec cursus arcu, sit amet aliquet dolor. In condimentum, sapien ut tincidunt vehicula, libero ante commodo sem, nec euismod erat magna at ligula. Donec gravida neque et sem laoreet, id vehicula metus ultrices. Aenean quis nisi eu velit posuere consequat ac et nulla.
@@ -15,48 +16,49 @@
 
 
         <!-- DAFTAR LEGALITAS -->
-<div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
-    <h2 style="text-align: center; color: #ed781b;">DAFTAR LEGALITAS</h2>
-    
-    <div class="accordion" id="legalitasAccordion">
-        <!-- Content 1 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasOne" style="border-radius: 0;">
-                <h5 class="mb-0">Akta Perusahaan</h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasOne" aria-expanded="false" aria-controls="collapseLegalitasOne">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
-            <div id="collapseLegalitasOne" class="collapse" aria-labelledby="headingLegalitasOne" data-parent="#legalitasAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>Akta Pendirian Perusahaan</li>
-                        <li>Akta Perubahan Perusahaan</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="container-fluid mt-4 mb-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+            <h2 style="text-align: center; color: #ed781b;  margin-top: 30px;">DAFTAR LEGALITAS</h2>
+            <div class="container-fluid mb-5" style="width: 90%;">
+                <div class="accordion" id="legalitasAccordion">
+                    <!-- Content 1 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasOne" style="border-radius: 0;">
+                            <h5 class="mb-0">Akta Perusahaan</h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasOne" aria-expanded="false" aria-controls="collapseLegalitasOne">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
+                        <div id="collapseLegalitasOne" class="collapse" aria-labelledby="headingLegalitasOne" data-parent="#legalitasAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>Akta Pendirian Perusahaan</li>
+                                    <li>Akta Perubahan Perusahaan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Content 2 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasTwo" style="border-radius: 0;">
-                <h5 class="mb-0">Surat Izin Usaha</h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasTwo" aria-expanded="false" aria-controls="collapseLegalitasTwo">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
-            <div id="collapseLegalitasTwo" class="collapse" aria-labelledby="headingLegalitasTwo" data-parent="#legalitasAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>Surat Izin Usaha Jasa Pertambangan Mineral dan Batubara</li>
-                        <li>Surat Izin Usaha Jasa Konstruksi Nasional</li>
-                        <li>Surat Izin Usaha Perdagangan (SIUP)</li>
-                    </ul>
+                    <!-- Content 2 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingLegalitasTwo" style="border-radius: 0;">
+                            <h5 class="mb-0">Surat Izin Usaha</h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseLegalitasTwo" aria-expanded="false" aria-controls="collapseLegalitasTwo">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
+                        <div id="collapseLegalitasTwo" class="collapse" aria-labelledby="headingLegalitasTwo" data-parent="#legalitasAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important; border-radius: 0;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>Surat Izin Usaha Jasa Pertambangan Mineral dan Batubara</li>
+                                    <li>Surat Izin Usaha Jasa Konstruksi Nasional</li>
+                                    <li>Surat Izin Usaha Perdagangan (SIUP)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 
 
@@ -64,114 +66,118 @@
 
 
         <!-- DAFTAR SERTIFIKASI -->
-      <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
-    <h2 style="text-align: center; color: #ed781b;">DAFTAR SERTIFIKASI</h2>
-    <div class="accordion" id="sertifikasiAccordion">
-        <!-- Content 1 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiOne">
-                <h5 class="mb-0">
+        <div class="container-fluid mt-4 mb-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+            <h2 style="text-align: center; color: #ed781b; margin-top: 30px;">DAFTAR SERTIFIKASI</h2>
+            <div class="container-fluid mb-5" style="width: 90%;">
+                <div class="accordion" id="sertifikasiAccordion">
+                    <!-- Content 1 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiOne">
+                            <h5 class="mb-0">
                     Sertifikasi Kelayakan Konstruksi Platform (SKKP)
-                </h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiOne" aria-expanded="false" aria-controls="collapseSertifikasiOne">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
+                            </h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiOne" aria-expanded="false" aria-controls="collapseSertifikasiOne">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
 
-            <div id="collapseSertifikasiOne" class="collapse" aria-labelledby="headingSertifikasiOne" data-parent="#sertifikasiAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>SKKP - Jasa Pemborongan Non Konstruksi Logam, Kayu, dan Plastik</li>
-                        <li>SKKP - Jasa Pemasok Barang Pemasokan Barang Semua Bidang</li>
-                        <li>SKKP - Jasa Pengembangan Real Estate Jasa Real Estate</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                        <div id="collapseSertifikasiOne" class="collapse" aria-labelledby="headingSertifikasiOne" data-parent="#sertifikasiAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>SKKP - Jasa Pemborongan Non Konstruksi Logam, Kayu, dan Plastik</li>
+                                    <li>SKKP - Jasa Pemasok Barang Pemasokan Barang Semua Bidang</li>
+                                    <li>SKKP - Jasa Pengembangan Real Estate Jasa Real Estate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Content 2 -->
-        <div class="card" style="background-color: #e3e0d7; border: none; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
-                <h5 class="mb-0">
+                    <!-- Content 2 -->
+                    <div class="card" style="background-color: #e3e0d7; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
+                            <h5 class="mb-0">
                     Sertifikat SMK3
-                </h5>
-            </div>
-        </div>
+                            </h5>
+                        </div>
+                    </div>
 
-        <!-- Content 3 -->
-        <div class="card" style="background-color: #e3e0d7; border: none; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiThree">
-                <h5 class="mb-0">
+                    <!-- Content 3 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiThree">
+                            <h5 class="mb-0">
                     The International Organization for Standardization (ISO)
-                </h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiThree" aria-expanded="false" aria-controls="collapseSertifikasiThree">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
-            <div id="collapseSertifikasiThree" class="collapse" aria-labelledby="headingSertifikasiThree" data-parent="#sertifikasiAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>ISO 9001 : 2015</li>
-                        <li>ISO 18001 : 2007</li>
-                        <li>ISO 14001 : 2015</li>
-                    </ul>
+                            </h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapseSertifikasiThree" aria-expanded="false" aria-controls="collapseSertifikasiThree">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
+                        <div id="collapseSertifikasiThree" class="collapse" aria-labelledby="headingSertifikasiThree" data-parent="#sertifikasiAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>ISO 9001 : 2015</li>
+                                    <li>ISO 18001 : 2007</li>
+                                    <li>ISO 14001 : 2015</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 
 
 
 
         <!-- DAFTAR KUALIFIKASI -->
-     <div class="container-fluid my-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
-    <h2 style="text-align: center; color: #ed781b;">DAFTAR KUALIFIKASI</h2>
-    <div class="accordion" id="kualifikasiAccordion">
-        <!-- Content 1 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiOne">
-                <h5 class="mb-0">Kartu Tanda Anggota</h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiOne" aria-expanded="false" aria-controls="collapsekualifikasiOne">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
-            <div id="collapsekualifikasiOne" class="collapse" aria-labelledby="headingkualifikasiOne" data-parent="#kualifikasiAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>Kartu Tanda Anggota ASKOSNAS</li>
-                    </ul>
+        <div class="container-fluid mt-4 mb-4" style="max-height: 400px; overflow-y: auto; background-color: #dcd9d1; padding: 20px;">
+            <h2 style="text-align: center; color: #ed781b; margin-top: 30px;">DAFTAR KUALIFIKASI</h2>
+            <div class="container-fluid mb-5" style="width: 90%;">
+                <div class="accordion" id="kualifikasiAccordion">
+                    <!-- Content 1 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiOne">
+                            <h5 class="mb-0">Kartu Tanda Anggota</h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiOne" aria-expanded="false" aria-controls="collapsekualifikasiOne">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
+                        <div id="collapsekualifikasiOne" class="collapse" aria-labelledby="headingkualifikasiOne" data-parent="#kualifikasiAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>Kartu Tanda Anggota ASKOSNAS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content 2 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
+                            <h5 class="mb-0">NIB (Nomor Induk Berusaha)</h5>
+                        </div>
+                    </div>
+
+                    <!-- Content 3 -->
+                    <div class="card" style="background-color: #e3e0d7; border-radius: 0; border: none; border-bottom: 0.8px solid #000000;">
+                        <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiTwo">
+                            <h5 class="mb-0">Surat Badan Usaha (SBU)</h5>
+                            <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiTwo" aria-expanded="false" aria-controls="collapsekualifikasiTwo">
+                                <i class="fa fa-angle-down" style="color: #ed781b;"></i>
+                            </button>
+                        </div>
+                        <div id="collapsekualifikasiTwo" class="collapse" aria-labelledby="headingkualifikasiTwo" data-parent="#kualifikasiAccordion">
+                            <div class="card-body" style="background-color: #ece7e1 !important;">
+                                <ul style="list-style-type: none; padding-left: 30px;">
+                                    <li>SBU Bangunan Sipil</li>
+                                    <li>SBU Bangunan Gedung</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Content 2 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingSertifikasiTwo">
-                <h5 class="mb-0">NIB (Nomor Induk Berusaha)</h5>
-            </div>
-        </div>
-
-        <!-- Content 3 -->
-        <div class="card" style="background-color: #e3e0d7; border-radius: 0; border-bottom: 0.8px solid #000000;">
-            <div class="card-header d-flex justify-content-between align-items-center" id="headingkualifikasiTwo">
-                <h5 class="mb-0">Surat Badan Usaha (SBU)</h5>
-                <button class="btn btn-link text-black" type="button" data-toggle="collapse" data-target="#collapsekualifikasiTwo" aria-expanded="false" aria-controls="collapsekualifikasiTwo">
-                    <i class="fa fa-angle-down" style="color: #ed781b;"></i>
-                </button>
-            </div>
-            <div id="collapsekualifikasiTwo" class="collapse" aria-labelledby="headingkualifikasiTwo" data-parent="#kualifikasiAccordion">
-                <div class="card-body" style="background-color: #ece7e1 !important;">
-                    <ul style="list-style-type: none; padding-left: 30px;">
-                        <li>SBU Bangunan Sipil</li>
-                        <li>SBU Bangunan Gedung</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

@@ -53,7 +53,7 @@
                         <!-- Button Learn More -->
                         <div class="row justify-content-start mt-4">
                             <div class="col-md-12 text-start">
-                                <a href="/about_page" class="btn btn-lg" style="background-color: #ed781b; color: white; font-weight: bold; border-radius: 0;">LEARN MORE</a>
+                                <a href="/about_page" class="btn btn-lg" style="background-color: #ed781b; color: white; font-weight: bold; border-radius: 0; padding: 10px 40px;">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
             </div>
 
         </div>
-
+        <!-- marquee -->
         <div class="col-12 mt-4">
             <div style="border: 5px solid #ece7e1; padding: 20px; margin-top: 20px; margin-bottom: 20px;">
                 <h2 style="text-align: center; margin-bottom: 20px; color: #000; font-size: 3rem; font-weight: bold;">OUR CLIENT</h2>

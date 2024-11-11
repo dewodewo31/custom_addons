@@ -65,10 +65,10 @@
 
             
         </style>
-        <div class="container-fluid" style="background-image: url('/landing_EPA/static/src/img/news/bg_news.png'); background-size: 50%; background-position: center;">
+        <div class="container-fluid" style="background-image: url('/landing_EPA/static/src/img/news/bg_news.png'); background-size: 35%; background-position: center; z-index: 1;">
             <!-- Konten Mulai dari Sini -->
 
-            <div class="container">
+            <div class="container-fluid" style="width: 85%;">
                 <div class="row">
                     <!-- Bagian atas: Judul dan Deskripsi dalam satu baris -->
                     <div class="col-12">
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container-fluid" style="width: 86%;">
                 <div class="row">
                     <div class="col-12">
                         <div class="d-flex justify-content-between align-items-center my-4">
@@ -115,13 +115,21 @@
                                 </ul>
                             </div>
 
-                            <!-- Search Bar -->
+
 
                             <!-- Search Bar -->
-                            <form class="d-flex flex-grow-1" action="/news_page" method="get">
+                            <!-- <form class="d-flex flex-grow-1" action="/news_page" method="get">
                                 <input class="form-control me-2" type="search" name="q" t-att-value="search_query" placeholder="Cari..." aria-label="Search" style="background-color: #ece7e1; border: 1px solid #ed781b; color: #000;" />
                                 <button class="btn btn-outline-success custom-btn" style="border: 1px solid #ed781b; color: #ed781b;" type="submit">Cari</button>
+                            </form> -->
+
+                            <form class="d-flex flex-grow-1" action="/news_page" method="get" style="position: relative;">
+                                <input class="form-control me-2" type="search" name="q" t-att-value="search_query" placeholder="Cari..." aria-label="Search" style="background-color: #ece7e1; border: 1px solid #ed781b; color: #000; padding-right: 40px;" />
+                                <button class="btn custom-btn" type="submit" aria-label="Search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #ed781b;">
+                                    <i class="fas fa-search"></i>                                    <!-- Pastikan Anda sudah menyertakan Font Awesome untuk ikon kaca pembesar -->
+                                </button>
                             </form>
+
 
                             <!-- Section for search results or 'no results' message -->
                             <div class="row mt-4">
@@ -138,7 +146,7 @@
                                     <t t-else="">
                                         <!-- Pesan 'Tidak ada hasil pencarian' -->
                                         <p>Tidak ada hasil pencarian untuk "<t t-esc="search_query"/>
-".</p>
+                                        ".</p>
                                     </t>
                                 </div>
                             </div>
@@ -150,28 +158,28 @@
             </div>
 
             <!-- Perulangan untuk Card Berita -->
-            <div class="container">
+            <div class="container-fluid" style="width: 85%;">
                 <div class="row">
                     <t t-foreach="news_posts" t-as="news">
                         <div class="col-md-4 mb-4 d-flex">
                             <div class="card" style="border-radius: 0; height: 400px; width: 100%; display: flex; flex-direction: column; background-color: #ece7e1;">
                                 <!-- Gambar Card -->
                                 <t t-if="news['cover_image_url']">
-    <div style="position: relative; height: 200px; width: 100%; overflow: hidden;">
-        <img t-att-src="news['cover_image_url']" alt="Image Card" style="width: 100%; height: 100%; object-fit: cover;" />
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2);"></div>
-    </div>
-</t>
-<t t-else="">
-    <div style="position: relative; height: 200px; width: 100%; overflow: hidden;">
-        <img src="/landing_EPA/static/src/img/default-image.png" alt="Default Image" style="width: 100%; height: 100%; object-fit: cover;" />
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2);"></div>
-    </div>
-</t>
+                                    <div style="position: relative; height: 200px; width: 100%; overflow: hidden;">
+                                        <img t-att-src="news['cover_image_url']" alt="Image Card" style="width: 100%; height: 100%; object-fit: cover;" />
+                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2);"></div>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div style="position: relative; height: 200px; width: 100%; overflow: hidden;">
+                                        <img src="/landing_EPA/static/src/img/default-image.png" alt="Default Image" style="width: 100%; height: 100%; object-fit: cover;" />
+                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2);"></div>
+                                    </div>
+                                </t>
 
 
                                 <!-- Body Card -->
-                                <div class="card-body" style="background-color: #ece7e1 !important; border: 2px solid #ed781b; border-radius: 0; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="card-body" style="background-color: #ece7e1 !important; border: 1px solid #ed781b; border-radius: 0; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
                                     <!-- Teks tanggal -->
                                     <p class="text-muted mb-1" style="font-size: 0.9rem;">
                                         <t t-esc="news['create_date'].strftime('%d %B %Y')" />
@@ -205,36 +213,37 @@
             </div>
 
             <!-- Pagination -->
-          <div class="row mt-4">
-    <div class="col text-center">
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                <!-- Tombol Sebelumnya -->
-                <li class="page-item" t-if="current_page > 1">
-                    <a t-att-href="'/news_page?page=%s' % (current_page - 1)" class="page-link" aria-label="Previous">
-                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Sebelumnya" class="pagination-icon reverse-icon"/>
-                    </a>
-                </li>
 
-                <!-- Nomor Halaman -->
-                <t t-foreach="range(1, total_pages + 1)" t-as="p">
-                    <li t-att-class="'page-item %s' % ('active' if p == current_page else '')">
-                        <a t-att-href="'/news_page?page=%s' % p" class="page-link">
-                            <t t-esc="p"/>
-                        </a>
-                    </li>
-                </t>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <!-- Tombol Sebelumnya -->
+                            <li class="page-item" t-if="current_page > 1">
+                                <a t-att-href="'/news_page?page=%s' % (current_page - 1)" class="page-link" aria-label="Previous">
+                                    <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Sebelumnya" class="pagination-icon reverse-icon"/>
+                                </a>
+                            </li>
 
-                <!-- Tombol Berikutnya -->
-                <li class="page-item" t-if="current_page &lt; total_pages">
-                    <a t-att-href="'/news_page?page=%s' % (current_page + 1)" class="page-link" aria-label="Next">
-                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Berikutnya" class="pagination-icon"/>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+                            <!-- Nomor Halaman -->
+                            <t t-foreach="range(1, total_pages + 1)" t-as="p">
+                                <li t-att-class="'page-item %s' % ('active' if p == current_page else '')">
+                                    <a t-att-href="'/news_page?page=%s' % p" class="page-link">
+                                        <t t-esc="p"/>
+                                    </a>
+                                </li>
+                            </t>
+
+                            <!-- Tombol Berikutnya -->
+                            <li class="page-item" t-if="current_page &lt; total_pages">
+                                <a t-att-href="'/news_page?page=%s' % (current_page + 1)" class="page-link" aria-label="Next">
+                                    <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Berikutnya" class="pagination-icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
 
 

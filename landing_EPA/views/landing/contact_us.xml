@@ -6,7 +6,7 @@
             .custom-bg {
                 background-color: #dcd9d1; /* Ganti dengan warna latar belakang yang kamu inginkan */
             }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- 
             .fade {
                 transition: opacity 0.5s ease;
             }
@@ -22,7 +22,7 @@
                 MAKE YOUR <span style="color: #ed781b;">VISION</span> COME TRUE, NOW!
             </h1>
 
-            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 20px; margin-top: 20px; margin-bottom: 100px; border-radius: 0;" data-toggle="modal" data-target="#contactModal">
+            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 40px; margin-top: 50px; margin-bottom: 100px; border-radius: 0;" data-toggle="modal" data-target="#contactModal">
                 INVITE US
             </a>
 

@@ -205,7 +205,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="description">
-                                <p class="text-left" style="padding-right: 20px;">                                    <!-- Tambah padding-right -->
+                                <p class="text-left" style="padding-right: 0;">                                    <!-- Tambah padding-right -->
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lectus vel libero laoreet ultricies.
                                 </p>
                             </div>
@@ -217,14 +217,14 @@
             </div>
 
             <!-- Bagian bawah: 3 Testimonial Cards -->
-            <div class="row mt-4 grid-layout">
+            <div class="row mt-4 grid-layout" style="font-family: 'Open Sans', sans-serif !important;">
                 <t t-set="index" t-value="0"/>
                 <t t-foreach="testimonials" t-as="testimonial" t-key="testimonial['testi']">
                     <div class="col-md-4 col-sm-6 mb-0 d-flex" style="height: 60%;">
                         <div t-attf-class="testimonial-card h-100 #{'bg-color-1' if index % 2 == 0 else 'bg-color-2'}" style="border-radius: 0; padding: 20px; width: 100%;">
-                            <span class="quote-icon" style="font-family: 'Open Sans', sans-serif;">“</span>
+                            <span class="quote-icon" style="font-family: 'Open Sans', sans-serif !important;">“</span>
 
-                            <p style="margin-top: 75px; flex-grow: 1; min-height: 100px;">
+                            <p style="margin-top: 30px; flex-grow: 1; min-height: 100px; padding: 25px; padding-bottom: 0;">
                                 <t t-set="text" t-value="testimonial['testi']"/>
                                 <t t-set="sentences" t-value="text.split('.')[:2]"/>
                                 <t t-esc="' '.join(sentences)"/>
