@@ -9,9 +9,9 @@
 }
 
 .marquee .d-flex {
-    display: inline-block; /* Pastikan konten mengikuti alur inline */
+                                        <!-- display: inline-block; /* Pastikan konten mengikuti alur inline */ -->
     white-space: nowrap; /* Cegah konten membungkus ke baris baru */
-    animation: marquee-animation 15s linear infinite; /* Animasi berjalan terus tanpa jeda */
+    animation: marquee-animation 40s linear infinite; /* Animasi berjalan terus tanpa jeda */
 }
 
 @keyframes marquee-animation {
@@ -19,7 +19,7 @@
         transform: translateX(100%); /* Mulai dari luar tampilan di sebelah kanan */
     }
     100% {
-        transform: translateX(-100%); /* Bergerak sepenuhnya ke kiri */
+        transform: translateX(-200%); /* Bergerak sepenuhnya ke kiri */
     }
 }
 
@@ -70,31 +70,55 @@
                         <div class="d-flex" style="white-space: nowrap;">
                             <!-- Loop untuk 9 logo dalam satu baris -->
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/EPA.png'" class="img-fluid" alt="Logo 1" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/1.png'" class="img-fluid" alt="Logo 1" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/MPA.png'" class="img-fluid" alt="Logo 2" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/2.png'" class="img-fluid" alt="Logo 2" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/new.png'" class="img-fluid" alt="Logo 3" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/3.png'" class="img-fluid" alt="Logo 3" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/new_white.png'" class="img-fluid" alt="Logo 4" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/4.png'" class="img-fluid" alt="Logo 4" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/PADMA.png'" class="img-fluid" alt="Logo 5" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/5.png'" class="img-fluid" alt="Logo 5" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/TA.png'" class="img-fluid" alt="Logo 6" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/6.png'" class="img-fluid" alt="Logo 6" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/TMS.png'" class="img-fluid" alt="Logo 7" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/7.png'" class="img-fluid" alt="Logo 7" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/TSL.png'" class="img-fluid" alt="Logo 8" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/8.png'" class="img-fluid" alt="Logo 8" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                             <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/WPA.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                                <img t-att-src="'/landing_EPA/static/src/img/company/9.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/10.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/11.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/12.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/13.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/14.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/15.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/16.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/17.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
                             </div>
                         </div>
                     </div>
